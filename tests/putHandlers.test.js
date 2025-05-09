@@ -13,6 +13,8 @@ test('adding price to product status should be 200', async () => {
             },
             body: JSON.stringify(requestBody)
         });
+        const data = await response.json();
+        console.log(data);
     } catch (error) {
         console.error(error);
     }
@@ -27,6 +29,8 @@ test('adding an order status should be 200', async () => {
             },
             body: JSON.stringify(requestBody)
         });
+        const data = await response.json();
+        console.log(data);
     } catch (error) {
         console.error(error);
     }

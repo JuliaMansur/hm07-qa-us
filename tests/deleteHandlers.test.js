@@ -6,6 +6,8 @@ try {
         const response = await fetch(`${config.API_URL}/api/v1/orders/123`, { 
              method:'DELETE'
             });
+            const data = await response.json();
+        console.log(data);
     } catch (error) {
         console.error(error);
     }
