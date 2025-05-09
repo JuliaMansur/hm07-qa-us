@@ -27,9 +27,7 @@ expect(responseBody).toEqual([
 
 		{ name: 'Big World', workingHours: { start: 5, end: 20 } } 
 
- 
-
-	  ])
+   ]);
 });
 test('status is 200', async () => {
     let responsecode;

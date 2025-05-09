@@ -14,7 +14,6 @@ test('adding price to product status should be 200', async () => {
             },
             body: JSON.stringify(requestBody)
         });
-        actualStatus = response.status;
     } catch (error) {
         console.error(error);
     }

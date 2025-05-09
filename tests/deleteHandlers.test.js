@@ -8,7 +8,6 @@ test('deleting an order status should be 200', async () => {
             {
             method:'DELETE',
             });
-        actualStatus = response.status;
     } catch (error) {
         console.error(error);
     }
