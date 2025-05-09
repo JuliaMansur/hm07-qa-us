@@ -2,10 +2,9 @@
 const config = require('../config');
 
 test('deleting an order status should be 200', async () => {
-    try {
-        const response = await fetch(`${config.API_URL}/api/v1/orders/123`, 
-            {
-            method:'DELETE',
+try {
+        const response = await fetch(`${config.API_URL}/api/v1/orders/123`, { 
+             method:'DELETE'
             });
     } catch (error) {
         console.error(error);
