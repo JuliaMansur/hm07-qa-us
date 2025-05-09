@@ -19,8 +19,8 @@ test('adding price to product status should be 200', async () => {
         console.error(error);
     }
 });
+
 test('adding an order status should be 200', async () => {
-    let actualStatus;
     try {
         const response = await fetch(`${config.API_URL}/your/api/v1/orders/123/complete`, {
             method: 'PUT',
