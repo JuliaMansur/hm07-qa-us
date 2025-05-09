@@ -5,7 +5,6 @@ const requestBody = {
     "price": 175
 }
 test('adding price to product status should be 200', async () => {
-    let actualStatus;
     try {
         const response = await fetch(`${config.API_URL}/api/v1/products/7`, {
             method: 'PUT',
